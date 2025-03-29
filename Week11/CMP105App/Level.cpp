@@ -1,7 +1,13 @@
 #include "Level.h"
 
+Level::Level()
+{
+}
+
 Level::Level(sf::RenderWindow* hwnd, Input* in, GameState* gs, AudioManager* aud)
 {
+	
+	
 	window = hwnd;
 	input = in;
 	gameState = gs;
@@ -9,6 +15,8 @@ Level::Level(sf::RenderWindow* hwnd, Input* in, GameState* gs, AudioManager* aud
 
 	// initialise game objects
 	audio->addMusic("sfx/cantina.ogg", "cantina");
+
+	
 }
 
 Level::~Level()
@@ -25,6 +33,7 @@ void Level::handleInput(float dt)
 // Update game objects
 void Level::update(float dt)
 {
+
 	
 }
 

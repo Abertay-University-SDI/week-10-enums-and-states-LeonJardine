@@ -11,13 +11,18 @@
 
 class Level : public BaseLevel{
 public:
+	Level();
 	Level(sf::RenderWindow* hwnd, Input* in, GameState* gs, AudioManager* aud);
 	~Level();
 
-	void handleInput(float dt) override;
-	void update(float dt) override;
+	void handleInput(float dt)override;
+	void update(float dt)override;
 	void render();
+
+	
+
 
 private:
 	// Default variables for level class.
+
 };
